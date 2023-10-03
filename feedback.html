@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- DO NOT DELETE THE GIVEN TEMPLATE. FILL YOUR CODE WHEREVER NECESSARY -->
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+</head>
+<body>
+
+	<div class="container">
+		<h2>Feedback form</h2>
+		<form action="#" class="form-group" onsubmit="return false">
+			<div class="form-group">
+				<label for="customerName">Customer Name:</label>
+		        <input type="text" class="form-control" id="customername" placeholder="Enter your name" name="customername">
+
+			</div>
+			<div class="form-group">
+				<label for="mobileNumber">Mobile Number:</label>
+				<input type="tel" class="form-control" id="mobileNumber" placeholder="Enter your mobile name" name="mobileNumber">
+		
+			</div>
+			<div class="form-group">
+				<label for="email">Email:</label>
+		        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+
+
+			</div>
+
+			<div class="form-check">
+			    
+				<label for="gender" class="form-check-label">Gender:</label>
+				
+			
+				<input type="radio" class="form-check-input" name="gender" value="male" ><label class="form-check-label">male</label>
+				
+				
+				<input type="radio" class="form-check-input" name="gender"  value="female" >
+				<label class="form-check-label">female</label>
+            
+                 
+			</div>	
+			<div class="form-group">
+				<label for="remarks">Remarks:</label>
+				<textarea class="form-control" id="remarks" rows="5"></textarea>
+
+			</div>
+			<div>
+				<input type="checkbox" class="form-check-input" id="subscribe">
+				<label>Accept to subscribe for newsletters through email</label>
+			</div>
+			<div>
+			    
+			    <input type="submit" value="Submit" class="btn btn-success btn-lg" id="submit">
+			    
+			</div>
+		       
+		
+		</form>
+	</div>
+
+</body>
+</html>

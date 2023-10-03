@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Basic Information</title>
+<style>
+    input{
+        width:200px;
+    }
+    body{
+        background-color:#F0E68C;
+    }
+    #personal{
+        background-color:#F5F5F5;
+        font-weight:bold;
+        font-style:italic;
+    }
+    #current{
+        background-color:#FFF5EE;
+        font-weight:bold;
+        font-style:italic;
+    }
+    #previous{
+        background-color:#F8F8FF;
+        font-weight:bold;
+        font-style:italic;
+    }
+    h1{
+        Text-align:left;
+        text-decoration: underline;
+        color:#4B0082;
+    }
+    #submit{
+        color: #FFFFFF;
+        background-color: #4B0082;
+    }
+</style>
+</head>
+<body>
+    <h1>Employee Basic Information</h1>	
+    <form>
+         <fieldset id="personal" ><legend id="personallegend">Personal information</legend>
+      
+        <lable for="personal" >Employee name</lable>
+        <input type="text" placeholder="Enter the employee name"  id="employeename" required ><br><br>
+        <lable for="personal"  >Employee Id</lable>
+        <input type="text" placeholder="Enter the employee id" id="employeeid" required><br><br>
+        <lable for="personal" >Aadhar Number</lable>
+        <input type="text" placeholder="Enter the aadhar number"  id="aadharnumber" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" required><br><br>
+        <lable for="personal" >Enter Email</lable>
+        <input type="text" placeholder="Enter the email" id="email" required>
+        </fieldset> 
+
+         <fieldset id="current" ><legend id="currentlegend">Current position</legend>
+      
+        <lable id="current">Department</lable>
+        <input type="text" id="department" required ><br><br>
+        <lable id="current">Designation</lable>
+        <input type="text" id="designation" required><br><br>
+        <lable id="current">Location</lable>
+        <input type="text" id="location" required><br><br>
+        </fieldset>
+        
+        <fieldset id="previous">
+        <legend id="previouslegend">Previous Employment</legend>
+      
+        <lable for="previous">Employer</lable>
+        <input type="text" id="employer" required><br><br>
+        <lable for="previous">Employer Designation</lable>
+        <input type="text" id="employerdesignation" required><br><br>
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    
+        <input type="submit" id="submit" value="Save & continue">
+</body>
+</html>

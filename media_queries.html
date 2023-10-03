@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    
+    /*PLEASE DO NOT DELETE THE BELOW GIVEN CODE*/
+    
+    .row::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+    
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+    }
+    
+    html {
+      font-family: sans-serif;
+    }
+    
+    .header {
+      background-color: #007a3d;
+      color: #ffffff;
+      padding: 15px;
+    }
+    
+    .menu ul {
+      
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: auto;
+      white-space: nowrap;
+    }
+    
+    .menu li {
+      padding: 8px;
+      margin-bottom: 7px;
+      background-color: #007a3d;
+      color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    
+    .menu li:hover {
+      background-color: #0daf5e;
+    }
+    
+    .aboutUs {
+      background-color: #007a3d;
+      padding: 15px;
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    
+    .footer {
+      background-color: #007a3d;
+      color: #ffffff;
+      text-align: center;
+      font-size: 12px;
+      padding: 15px;
+    }
+    
+     @media screen and (min-width:720px){
+        .header{
+            background-color: #007a3d;
+            color: #fff;
+            padding: 15px;
+            font-size: 12px;
+        }
+        .aboutUs{
+            background-color: #007a3d;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer{
+            background-color: #007a3d;
+            color: #fff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+    }
+     @media screen and (max-width:720px){
+        .header{
+            background-color: #5e0259;
+            padding:8px;
+            font-size:14px;
+        }
+        .aboutUs{
+            background-color: #5e0259;
+            padding:10px;
+            text-align: left;
+            font-size:12px;
+        }
+        .footer{
+            background-color: #5e0259;
+            text-align:center;
+            padding:10px;
+            font-size:12px;
+        }
+        .menu li{
+            margin-bottom: 5px;
+            background-color: #5e0259;
+        }
+    }
+    
+     @media screen and (max-width:480px){
+        .header{
+            background-color: #5c4005;
+            padding:8px;
+            font-size:10px;
+        }
+        .aboutUs{
+            background-color: #5c4005;
+            padding:7px;
+            text-align: left;
+            font-size:10px;
+        }
+        .footer{
+            background-color: #5c4005;
+            text-align:left;
+            padding:7px;
+            font-size:10px;
+        }
+        .menu li{
+            margin-bottom: 3px;
+            background-color: #5c4005;
+        }
+    }
+    
+    
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    
+</style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Programming - Online Learning</h1>
+    </div>
+    
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+                <li>Java</li>
+                <li>PHP</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+            </ul>
+        </div>
+    
+        <div class="col-6">
+            <h1>Java</h1>
+            <p class="para-1">Java is used to develop mobile apps, web apps, desktop apps, games and much more.</p>
+            <p class="para-2">Java is a popular programming language, created in 1995. </p>
+            It is owned by Oracle, and more than 3 billion devices run Java.<br/>
+            It is used for:
+            <ul>
+                <li>Mobile applications (specially Android apps)</li>
+                <li>Desktop applications</li>
+                <li>Web applications</li>
+                <li>Web servers and application servers</li>
+                <li>Games</li>
+                <li>Database connection</li>
+                <li>And much, much more!</li>
+            </ul>
+        </div>
+        
+        <div class="col-3 right">
+            <div class="aboutUs">
+                <h2>About Us</h2>
+                <p>We are the leading online tutorial center who provides in-depth knowledge to make a beginer to a smart developer.</p>
+                <h2>For Enquiries</h2>
+                <p>Feel free to reach us through support@myfirm.com <br/> Our team will respond you within 24 hours.</p>
+                <h2>Carriers</h2>
+                <p>We are always open to the talented candidates. Ping us on carriers@myfirm.com</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+      <p>This page needs to be sytled with css media queries. Resize the browser to check your solution.</p>
+    </div>
+</body>
+</html>
